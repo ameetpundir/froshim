@@ -7,12 +7,11 @@
     <select name="sport">
         <option disable selected>Sport</option>
 
-        <option>Basketball</option>
+        {% for sport in sports %}
+            <option>{{sport}}</option>
+        {%endfor%}
 
-        <option>Cricket</option>
-
-        <option>Football</option>
-    </select>
+          </select>
     <input type ="submit">
 </form>
 
